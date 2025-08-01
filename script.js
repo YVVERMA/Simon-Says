@@ -7,7 +7,7 @@ let started = false;
 let level = 0;
 let highestScore = 0; // Add this at the top
 
-document.querySelector('h2').addEventListener("click", function () {
+document.querySelector('.Start-game').addEventListener("click", function () {
   if (started == false) {
     console.log("Game is Started");
     started = true;
@@ -53,8 +53,9 @@ function checkAns(idx) {
     if (level > highestScore) {
       highestScore = level;
     }
-    h2.innerHTML = `Game Over! <b>Your score was: ${level}</b> <br>Highest Score: <b>${highestScore}</b><br>Press any key to start.`;
+    h2.innerHTML = `Game Over! <b>Your score was: ${level}</b> <br>Highest Score: <b>${highestScore}</b><br>`;
     document.querySelector("body").style.backgroundColor = "red";
+    document.querySelector(".Start-game").textContent = "Start New Game"
     setTimeout(() => {
       document.querySelector("body").style.backgroundColor = "white";
     }, 800);
