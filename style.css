@@ -6,7 +6,7 @@
     --btn-size: 150px;
     --btn-radius: 20%;
     --btn-border: 8px solid #222;
-    --shadow: 0 4px 20px rgba(0,0,0,0.15);
+    --shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
 
 body {
@@ -17,7 +17,7 @@ body {
     align-items: center;
     /* background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%); */
     margin: 0;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
 }
 
@@ -38,7 +38,7 @@ body {
     height: var(--btn-size);
     border-radius: var(--btn-radius);
     border: var(--btn-border);
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
     cursor: pointer;
     transition: transform 0.1s, filter 0.2s;
     outline: none;
@@ -52,12 +52,15 @@ body {
 .red {
     background: var(--red);
 }
+
 .green {
     background: var(--green);
 }
+
 .purple {
     background: var(--purple);
 }
+
 .yellow {
     background: var(--yellow);
 }
@@ -65,4 +68,56 @@ body {
 
 .flash {
     background-color: white;
+}
+
+footer {
+    text-align: center;
+}
+
+.Start-game {
+    padding: 10px 25px;
+    font-size: 1.1rem;
+    margin-top: 20px;
+    border: none;
+    background-color: #3498db;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease;
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+}
+
+.Start-game:hover {
+    background-color: #2980b9;
+}
+
+@media (max-width: 600px) {
+    .Start-game {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
+
+footer {
+  margin-top: 40px;
+  padding: 15px 0;
+  font-size: 0.95rem;
+  color: #666;
+  background-color: #f9f9f9;
+  border-top: 1px solid #ddd;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.05);
+}
+
+/* Optional: better spacing on small screens */
+@media (max-width: 600px) {
+  footer {
+    font-size: 0.85rem;
+    padding: 12px 0;
+  }
 }
