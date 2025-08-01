@@ -7,7 +7,7 @@ let started = false;
 let level = 0;
 let highestScore = 0; // Add this at the top
 
-document.addEventListener("keypress", function () {
+document.querySelector('h2').addEventListener("click", function () {
   if (started == false) {
     console.log("Game is Started");
     started = true;
